@@ -1,0 +1,63 @@
+Neil Marcellini
+1/4/18
+Lab 14 Part 2 Sample Runs
+
+Run #1
+How many nodes in your graph?
+10
+Probability of edge? (type 70 for 70%)
+50
+***** GENERATED GRAPH *****
+     [ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+[ 1]                   5       2   4   9   8
+[ 2]                   8           3        
+[ 3]               5   6   4   9   9        
+[ 4]           5                       9    
+[ 5]   5   8   6           7   5   2   7    
+[ 6]           4       7               5   8
+[ 7]   2       9       5           3       4
+[ 8]   4   3   9       2       3       2    
+[ 9]   9           9   7   5       2        
+[10]   8                   8   4            
+
+The graph has cycles.
+
+
+***** MINIMUM SPANNING TREE FOR THE ABOVE GRAPH *****
+     [ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8][ 9][10]
+[ 1]                           2            
+[ 2]                               3        
+[ 3]               5       4                
+[ 4]           5                            
+[ 5]                               2        
+[ 6]           4                       5    
+[ 7]   2                           3       4
+[ 8]       3           2       3       2    
+[ 9]                       5       2        
+[10]                           4            
+
+The minimum spanning tree is acyclic.
+
+Process finished with exit code 0
+
+
+
+
+Run #2
+How many nodes in your graph?
+8
+Probability of edge? (type 70 for 70%)
+10
+***** GENERATED GRAPH *****
+     [ 1][ 2][ 3][ 4][ 5][ 6][ 7][ 8]
+[ 1]                                
+[ 2]                   2           3
+[ 3]                                
+[ 4]                           2    
+[ 5]       2                        
+[ 6]                               3
+[ 7]               2               1
+[ 8]       3               3   1    
+The graph is not connected, the minimum spanning tree will not be calculated
+
+Process finished with exit code 0
